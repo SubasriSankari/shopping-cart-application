@@ -5,7 +5,19 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    saasOptions:{
+      extension: "scss",
+    }
   });
+
+  // inputFiles: [    
+  //   '/app/styles/app.scss',  
+  //   '/app/styles/_product.scss',  
+  //   '/app/styles/_homepage.scss'  
+  // ],
+  // includePaths: [  
+  //   'app/styles'  
+  // ]  
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
